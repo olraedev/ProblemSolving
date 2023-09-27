@@ -1,3 +1,4 @@
 # ProblemSolving
 
-### [SWEA](https://github.com/SSangRRae/ProblemSolving/tree/main/SWEA)   
+### [SWEA](https://github.com/SSangRRae/ProblemSolving/tree/main/SWEA)
+: SW Expert Academy
