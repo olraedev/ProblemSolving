@@ -1,5 +1,5 @@
 # ProblemSolving
-<p align="right"> 최종업로드: 2023-10-06 20:24:17 </p>
+<p align="right"> 최종업로드: 2023-10-06 20:28:36 </p>
 
 
 <br/>
@@ -20,4 +20,4 @@
 
 <br/>
 
- <p align="right"> made by: [AutoWriteREADME](https://github.com/SSangRRae/AutoWriteREADME)</p>
+ <p align="right"> made by: https://github.com/SSangRRae/AutoWriteREADME</p>
