@@ -11,7 +11,7 @@ int got = 21e8;
 
 void solve()
 {
-	int bottom = 1;
+	int bottom = 0;
 	int top = maxi;
 
 	while (1)
