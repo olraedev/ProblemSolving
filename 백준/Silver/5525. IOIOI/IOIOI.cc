@@ -1,25 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int N, M;
+int N, M, ans;
 string str;
-string findWord = "I";
-int cnt;
-
-void solve()
-{
-	int start = 0;
-
-	while (1)
-	{
-		int idx = str.find(findWord, start);
-
-		if (idx == -1) break;
-
-		cnt++;
-		start = idx + 1;
-	}
-}
 
 int main()
 {
@@ -31,12 +14,22 @@ int main()
 
 	cin >> N >> M >> str;
 
-	for (int i = 0; i < N; i++)
-		findWord += "OI";
+	for (int i = 1; i < str.length(); i++)
+	{
+		int cnt = 0;
+		if (str[i - 1] == 'I') {
+			while (str[i] == 'O' && str[i + 1] == 'I') {
+				i += 2;
+				cnt++;
+				if (cnt == N) {
+					cnt--;
+					ans++;
+				}
+			}
+		}
+	}
 
-	solve();
-
-	cout << cnt << "\n";
+	cout << ans << "\n";
 
 	return 0;
 }
