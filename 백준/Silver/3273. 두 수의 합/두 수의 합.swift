@@ -1,18 +1,18 @@
 import Foundation
 
-var n = Int(readLine()!)!
-var array = readLine()!.split(separator: " ").map { Int($0)! }
-var x = Int(readLine()!)!
+let n = Int(readLine()!)!
+let array = readLine()!.split(separator: " ").map { Int($0)! }
+let x = Int(readLine()!)!
 
-var dict: [Int: Void] = [:]
-var count = 0
+var answer = 0
+var d: [Bool] = .init(repeating: false, count: 2000002)
 
-for i in array {
-    dict.updateValue((), forKey: i)
+for element in array {
+    d[element] = true
 }
 
-for i in array {
-    if let j = dict[x - i] { count += 1 }
+for element in array {
+    if element < x && d[x - element] { answer += 1}
 }
 
-print(count / 2)
+print(answer / 2)
